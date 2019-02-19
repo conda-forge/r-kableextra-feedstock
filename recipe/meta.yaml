@@ -1,4 +1,4 @@
-{% set version = '0.9.0' %}
+{% set version = "1.0.1" %}
 
 package:
   name: r-kableextra
@@ -8,12 +8,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/kableExtra_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/kableExtra/kableExtra_{{ version }}.tar.gz
-  sha256: 6e3dac92dc064c246a6f102f91ae7a8324afab9d6307632fdee77d3b1e15431c
+  sha256: 95d3e1175183a791b2f0cc6582ae324483eaaae50f75b1bb7b262c0541e35e6f
 
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1000
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
