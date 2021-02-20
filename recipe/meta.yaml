@@ -1,4 +1,4 @@
-{% set version = "1.3.2" %}
+{% set version = "1.3.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/kableExtra_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/kableExtra/kableExtra_{{ version }}.tar.gz
-  sha256: 30707d19af136c5bfd205fc332a812b03739a3aef15af366c3aae45b65cfacc9
+  sha256: 091ffac282cf9257edcec1a06da38b5e6516f111296bedb934e32f5692ffbbb0
 
 build:
   merge_build_host: true  # [win]
