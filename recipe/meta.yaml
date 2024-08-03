@@ -1,6 +1,5 @@
 {% set version = "1.4.0" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-kableextra
@@ -13,8 +12,7 @@ source:
   sha256: 8fe2cc9fc2e8991685c4dc9e4904459e6f572c945319befde36d76f3ab527409
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
