@@ -1,4 +1,4 @@
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/kableExtra_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/kableExtra/kableExtra_{{ version }}.tar.gz
-  sha256: 8fe2cc9fc2e8991685c4dc9e4904459e6f572c945319befde36d76f3ab527409
+  sha256: 0bb002ac3151fdfe1cf9e2482c449710b620674a698e10d7a3f0e7242e90eb08
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
